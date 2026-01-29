@@ -1,0 +1,88 @@
+# 🚀 Quick Start Guide
+
+## Get Your Project Running in 5 Minutes!
+
+### Step 1: Get Your API Keys (FREE)
+
+**OpenWeatherMap API:**
+1. Visit: https://openweathermap.org/api
+2. Click "Sign Up" → Create free account
+3. Go to "API keys" tab
+4. Copy your API key
+
+**NewsAPI:**
+1. Visit: https://newsapi.org/
+2. Click "Get API Key"
+3. Fill the form (it's free!)
+4. Copy your API key
+
+### Step 2: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Configure Your .env File
+
+Open `.env` and replace these values:
+
+```env
+WEATHER_API_KEY=paste_your_openweathermap_key_here
+NEWS_API_KEY=paste_your_newsapi_key_here
+DB_PASSWORD=your_mysql_password
+```
+
+### Step 4: Setup Database
+
+```bash
+python setup_db.py
+```
+
+### Step 5: Run the Application
+
+```bash
+python app.py
+```
+
+### Step 6: Open in Browser
+
+```
+http://localhost:5000
+```
+
+## ✅ That's It!
+
+You should now see:
+- 🌤️ Weather data for London (default)
+- 📰 Latest news articles
+- 🔍 Search functionality
+
+## 🎯 Test Your Setup
+
+1. **Weather:** Type "Paris" and click "Get Weather"
+2. **News:** Select "Technology" category and click "Get News"
+3. **History:** Check the search history section at the bottom
+
+## ⚠️ Common Issues
+
+**"City not found"**
+- Check if WEATHER_API_KEY is correct in .env
+
+**"Failed to fetch news"**
+- Check if NEWS_API_KEY is correct in .env
+- Free tier has 100 requests/day limit
+
+**Database connection error**
+- Make sure MySQL is running
+- Check DB_PASSWORD in .env
+
+**Port already in use**
+- Change port in app.py: `app.run(port=5001)`
+
+## 📞 Need Help?
+
+Check the full README.md for detailed documentation!
+
+---
+
+**Happy Coding! 🎉**
